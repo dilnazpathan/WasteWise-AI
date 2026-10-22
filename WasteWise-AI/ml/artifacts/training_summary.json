@@ -1,0 +1,58 @@
+{
+  "trained_at_utc": "2026-10-17T11:09:59.260560+00:00",
+  "models": [
+    {
+      "model": "demand_forecast",
+      "artifact": "demand_forecast.joblib",
+      "metrics": {
+        "mae": 3.8121188407029476,
+        "rmse": 4.762866623305027,
+        "r2": 0.7375706513972768,
+        "wape": 0.2039501061213744
+      },
+      "prototype_only": false
+    },
+    {
+      "model": "expiry_risk",
+      "artifact": "expiry_risk.joblib",
+      "metrics": {
+        "accuracy": 0.8740740740740741,
+        "balanced_accuracy": 0.8696502531063046,
+        "precision": 0.9012345679012346,
+        "recall": 0.8902439024390244,
+        "f1": 0.8957055214723927,
+        "roc_auc": 0.941095260009204
+      },
+      "prototype_only": false
+    },
+    {
+      "model": "food_waste",
+      "artifact": "food_waste.joblib",
+      "metrics": {
+        "mae": 1.7142857142857142,
+        "rmse": 7.121797525905942,
+        "r2": -0.061504817877400475,
+        "wape": 1.0,
+        "exact_value_accuracy": 0.9228571428571428,
+        "waste_event_recall": 0.0
+      },
+      "prototype_only": false
+    },
+    {
+      "model": "discount_recommendation",
+      "artifact": "discount_recommendation.joblib",
+      "metrics": {
+        "mae": 36.31858038250179,
+        "rmse": 95.96552819628323,
+        "r2": 0.9451464741158762,
+        "wape": 0.1677723988949398,
+        "mean_recommended_simulated_margin": 282.08,
+        "mean_oracle_simulated_margin": 282.481875,
+        "mean_simulated_margin_regret": 0.401875,
+        "discount_choice_accuracy": 0.9475,
+        "evaluated_batches": 400
+      },
+      "prototype_only": true
+    }
+  ]
+}

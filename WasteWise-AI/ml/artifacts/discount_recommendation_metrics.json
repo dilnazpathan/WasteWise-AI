@@ -1,0 +1,41 @@
+{
+  "model": "discount_recommendation",
+  "trained_at_utc": "2026-10-17T11:09:59.246993+00:00",
+  "artifact": "discount_recommendation.joblib",
+  "metrics": {
+    "mae": 36.31858038250179,
+    "rmse": 95.96552819628323,
+    "r2": 0.9451464741158762,
+    "wape": 0.1677723988949398,
+    "mean_recommended_simulated_margin": 282.08,
+    "mean_oracle_simulated_margin": 282.481875,
+    "mean_simulated_margin_regret": 0.401875,
+    "discount_choice_accuracy": 0.9475,
+    "evaluated_batches": 400
+  },
+  "target": "estimated_gross_margin_simulated",
+  "data_file": "discount_scenarios_simulated - discount_scenarios_simulated.csv",
+  "features": [
+    "days_to_expiry",
+    "quantity_remaining",
+    "discount_pct",
+    "selling_price",
+    "unit_cost",
+    "product_id"
+  ],
+  "excluded_columns": [
+    "batch_id",
+    "estimated_units_sold_simulated",
+    "estimated_revenue_simulated",
+    "estimated_gross_margin_simulated"
+  ],
+  "recommendation_rule": "Score each available discount scenario and choose the discount with the highest predicted gross margin.",
+  "split": {
+    "method": "group holdout by batch_id",
+    "test_fraction": 0.2,
+    "train_rows": 8000,
+    "test_rows": 2000
+  },
+  "prototype_only": true,
+  "limitation": "Training targets are simulated scenarios and are not evidence of real customer price response or causal discount lift."
+}

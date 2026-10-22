@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+backend/.venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.pytest_cache/
+backend/.coverage
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+ml/data/raw/sell_prices.csv
+ml/data/raw/sell_prices.csv
