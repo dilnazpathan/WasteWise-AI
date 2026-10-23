@@ -1,12 +1,12 @@
 {
   "model": "discount_recommendation",
-  "trained_at_utc": "2026-10-17T11:09:59.246993+00:00",
+  "trained_at_utc": "2026-10-23T05:31:20.373707+00:00",
   "artifact": "discount_recommendation.joblib",
   "metrics": {
     "mae": 36.31858038250179,
     "rmse": 95.96552819628323,
     "r2": 0.9451464741158762,
-    "wape": 0.1677723988949398,
+    "wape": 0.16777239889493978,
     "mean_recommended_simulated_margin": 282.08,
     "mean_oracle_simulated_margin": 282.481875,
     "mean_simulated_margin_regret": 0.401875,
